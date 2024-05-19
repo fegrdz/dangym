@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root{
+	--primary-color: #f41c2b;
+	--secondary-color: #636e72;
+	--font: 'poppins', sans-serif;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: black;
+	font-family: var(--font);
+}
+
+
+
+nav{
+	position: absolute;
+	width: 100vw;
+	height: 60px;
+	border-top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 999999;
+}
+.logo{
+	height: 100px;
+	width: 100px;
+	background-color: var(--primary-color);
+}
+
+.imagen{
+	top: 20%;
+	width: 100px;
+	height: 100px;
+}
+.banner1{
+	background-color: var(--primary-color);
+	border-radius: 5px;
+}
+ul{
+	
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+
+ul a{
+	text-decoration: none;
+	color: white;
+	margin: 0 2rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	font-weight: 700;
+	font-size: 16px;
+}
+ul li{
+	list-style: none;
+}
+ul a:hover{
+	color: black;
+	transition: .4s;
+
+}
+
+
+.slider{
+    width: 1400px;
+    max-width: 100vw;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 1400px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    cursor: pointer;
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
+
+.intro{
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	color: white;
+}
+
+.intro h2,p{
+	display: block;
+	width: 60%;
+}
+
+.intro h2{
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 30px;
+}
+.intro .btn{
+	margin-top: 2rem;
+}
+
+#row{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.card1{
+	width: 33.3%;
+	height: 400px;
+	background-color: var(--secondary-color);
+	color: white;
+	display: flex;
+	justify-content: initial;
+	flex-direction: column;
+	align-items: center;
+
+}
+.card2{
+	width: 33.3%;
+	height: 400px;
+	background-color: white;
+	color: var(--primary-color);
+	display: flex;
+	justify-content: initial;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.card3{
+	width: 33.3%;
+	height: 400px;
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: initial;
+	flex-direction: column;
+	align-items: center;
+
+}
+.card4{
+	width: 100%;
+	height: 325px;
+	background-color: var(--primary-color);
+	color: var(--primary-color);
+	display: flex;
+}
+h1{
+	color: white;
+	font-size: 20px;
+}
+.map{
+text-align: center;
+}
+form{
+	background-color: none;
+	padding: 35px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 450px;
+}
+form h2{
+	font size: 20px;
+	color: white;
+	margin-bottom: 25px;
+	text-align: center;
+}
+input{
+	padding: 5px;
+	border: 0;
+	background-color: white;
+	margin-bottom: 15px;
+	font-size: 15px;
+	border-radius: 10px;
+	font-family: var(--font);
+	text-align: center;
+}
+.btn1{
+	padding: .2rem .5rem;
+	text-transform: uppercase;
+	font-family: var(--font);
+	background: var(--secondary-color);
+	color: white;
+	font-size: 16px;
+	text-decoration: none;
+	outline: none;
+	border: 2px solid var(--secondary-color);
+	transition: .3s;
+	cursor: pointer;
+	border-radius: 10px;
+
+}
+.btn1:hover{
+	background: transparent;
+}
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 20px 10px 10px ;
+}
+
+.sociales{
+	text-align: center;
+	color: white;
+	font-size: 25px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: var(--secondary-color);
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerfrase{
+text-align: center;
+padding: 15px;
+}
+
+.footerfrase h1{
+	color: white;
+	font-size: 25px;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+}
+.footerBottom h4{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
